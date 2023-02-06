@@ -1,0 +1,42 @@
+garvitjain@Garvits-MacBook-Air Exercise-8 % echo "index file content" > 
+index.html
+garvitjain@Garvits-MacBook-Air Exercise-8 % git add index.html
+garvitjain@Garvits-MacBook-Air Exercise-8 % git commit -m "Initial commit 
+with index.html"
+[master (root-commit) 27b9e29] Initial commit with index.html
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+garvitjain@Garvits-MacBook-Air Exercise-8 % git branch my-feature
+garvitjain@Garvits-MacBook-Air Exercise-8 % git checkout my-feature
+Switched to branch 'my-feature'
+garvitjain@Garvits-MacBook-Air Exercise-8 % echo "about-us file content" > 
+about-us.html
+garvitjain@Garvits-MacBook-Air Exercise-8 % git add about-us.html
+garvitjain@Garvits-MacBook-Air Exercise-8 % git commit -m "Adding 
+about-us.html in my-feature branch"
+[my-feature da7a4b7] Adding about-us.html in my-feature branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 about-us.html
+garvitjain@Garvits-MacBook-Air Exercise-8 % git checkout master
+Switched to branch 'master'
+garvitjain@Garvits-MacBook-Air Exercise-8 % git merge my-feature
+Updating 27b9e29..da7a4b7
+Fast-forward
+ about-us.html | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 about-us.html
+garvitjain@Garvits-MacBook-Air Exercise-8 % git remote add origin 
+git@github.com:garvitjain111/Ex-8.git
+garvitjain@Garvits-MacBook-Air Exercise-8 % git branch -M main
+garvitjain@Garvits-MacBook-Air Exercise-8 % git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 571 bytes | 571.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:garvitjain111/Ex-8.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+garvitjain@Garvits-MacBook-Air Exercise-8 % 
+
